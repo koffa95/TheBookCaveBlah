@@ -12544,11 +12544,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\The-Book-Cave\\The-Book-Cave.csproj",
-      "projectName": "The-Book-Cave",
-      "projectPath": "C:\\Users\\Lenovo\\Desktop\\The-Book-Cave\\The-Book-Cave.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\TheBookCave\\TheBookCave.csproj",
+      "projectName": "TheBookCave",
+      "projectPath": "C:\\Users\\Lenovo\\Desktop\\TheBookCave\\TheBookCave.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\Desktop\\The-Book-Cave\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo\\Desktop\\TheBookCave\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

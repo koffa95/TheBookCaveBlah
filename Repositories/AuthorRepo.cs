@@ -3,7 +3,7 @@ using System.Linq;
 using TheBookCave.Data;
 using TheBookCave.Models.ViewModels;
 
-namespace The_Book_Cave.Repositories
+namespace TheBookCave.Repositories
 {
     public class AuthorRepo
     {

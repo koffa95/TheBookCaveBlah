@@ -1,0 +1,3 @@
+C:\Users\Lenovo\Desktop\TheBookCave\obj\Debug\netcoreapp2.0\TheBookCave.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\TheBookCave\obj\Debug\netcoreapp2.0\TheBookCave.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\TheBookCave\obj\Debug\netcoreapp2.0\TheBookCave.AssemblyInfo.cs
