@@ -20,9 +20,9 @@ namespace TheBookCave.Migrations
                 .HasAnnotation("ProductVersion", "2.0.2-rtm-10011")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("The_Book_Cave.Data.Entity_Models.Author", b =>
+            modelBuilder.Entity("TheBookCave.Data.EntityModels.Author", b =>
                 {
-                    b.Property<int>("authorId")
+                    b.Property<int>("id")
                         .ValueGeneratedOnAdd();
 
                     b.Property<int>("age");
@@ -31,27 +31,37 @@ namespace TheBookCave.Migrations
 
                     b.Property<string>("name");
 
-                    b.HasKey("authorId");
+                    b.HasKey("id");
 
                     b.ToTable("Authors");
                 });
 
-            modelBuilder.Entity("The_Book_Cave.Data.Entity_Models.Book", b =>
+            modelBuilder.Entity("TheBookCave.Data.EntityModels.Book", b =>
                 {
-                    b.Property<int>("bookId")
+                    b.Property<int>("id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("author");
+                    b.Property<int>("authorId");
 
                     b.Property<string>("genre");
 
+                    b.Property<string>("language");
+
+                    b.Property<string>("originalLanguage");
+
+                    b.Property<int>("pages");
+
+                    b.Property<int>("price");
+
                     b.Property<string>("publisher");
+
+                    b.Property<int>("releaseYear");
 
                     b.Property<string>("title");
 
-                    b.Property<int>("year");
+                    b.Property<string>("translator");
 
-                    b.HasKey("bookId");
+                    b.HasKey("id");
 
                     b.ToTable("Books");
                 });
