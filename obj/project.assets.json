@@ -12538,23 +12538,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lenovo\\.nuget\\packages\\": {},
+    "C:\\Users\\Tinna\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\The-Book-Cave\\The-Book-Cave.csproj",
-      "projectName": "The-Book-Cave",
-      "projectPath": "C:\\Users\\Lenovo\\Desktop\\The-Book-Cave\\The-Book-Cave.csproj",
-      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\Desktop\\The-Book-Cave\\obj\\",
+      "projectUniqueName": "C:\\Users\\Tinna\\Documents\\TheBookCave\\TheBookCave.csproj",
+      "projectName": "TheBookCave",
+      "projectPath": "C:\\Users\\Tinna\\Documents\\TheBookCave\\TheBookCave.csproj",
+      "packagesPath": "C:\\Users\\Tinna\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tinna\\Documents\\TheBookCave\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Tinna\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
