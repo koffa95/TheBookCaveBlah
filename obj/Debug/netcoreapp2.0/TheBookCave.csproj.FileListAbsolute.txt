@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 C:\Users\Tinna\Documents\TheBookCave\obj\Debug\netcoreapp2.0\TheBookCave.csproj.CoreCompileInputs.cache
 C:\Users\Tinna\Documents\TheBookCave\obj\Debug\netcoreapp2.0\TheBookCave.AssemblyInfoInputs.cache
 C:\Users\Tinna\Documents\TheBookCave\obj\Debug\netcoreapp2.0\TheBookCave.AssemblyInfo.cs
+=======
+C:\Users\Lenovo\Desktop\TheBookCave\obj\Debug\netcoreapp2.0\TheBookCave.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\TheBookCave\obj\Debug\netcoreapp2.0\TheBookCave.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\TheBookCave\obj\Debug\netcoreapp2.0\TheBookCave.AssemblyInfo.cs
+>>>>>>> 315a600270d4c766a424b90c9b0c009f9f08e9ee
