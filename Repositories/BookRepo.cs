@@ -19,6 +19,16 @@ namespace TheBookCave.Repositories
                           {
                               bookId = a.id,
                               title = a.title,
+                              authorId = a.authorId,
+                              genre = a.genre,
+                              releaseYear = a.releaseYear,
+                              publisher = a.publisher,
+                              translator = a.translator,
+                              originalLanguage = a.originalLanguage,
+                              language = a.language,
+                              pages = a.pages,
+                              price = a.price
+
                           }).ToList();
 
             return books;
