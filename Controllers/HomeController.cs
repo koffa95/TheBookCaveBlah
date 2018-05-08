@@ -30,5 +30,10 @@ namespace TheBookCave.Controllers
             var books = _bookService.GetAllBooks();
             return View(books);
         }
+        public IActionResult Authors()
+        {
+            var authors = _authorService.GetAllAuthors();
+            return View(authors);
+        }
     }
 }
