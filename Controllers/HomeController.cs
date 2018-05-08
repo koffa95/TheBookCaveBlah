@@ -22,8 +22,8 @@ namespace TheBookCave.Controllers
         }
         public IActionResult Index()
         {
-            var authors = _userService.GetAllUsers();
-            return View(authors);
+            var users = _userService.GetAllUsers();
+            return View(users);
         }
         public IActionResult Books()
         {

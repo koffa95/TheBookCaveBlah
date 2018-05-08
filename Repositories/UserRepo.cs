@@ -14,11 +14,11 @@ namespace TheBookCave.Repositories
         }
         public List<UserListViewModel> GetAllUsers()
         {
-            var users = (from b in _db.Users
+            var users = (from u in _db.Users
                          select new UserListViewModel
                          {
-                              username = b.username,
-                              staff = b.staff
+                              username = u.username,
+                              staff = u.staff
                          }).ToList();
 
             return users;
