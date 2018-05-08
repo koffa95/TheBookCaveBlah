@@ -11,8 +11,8 @@ using TheBookCave.Data;
 namespace TheBookCave.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20180507181844_initialMigration")]
-    partial class initialMigration
+    [Migration("20180507191326_authorTable")]
+    partial class authorTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -41,6 +41,8 @@ namespace TheBookCave.Migrations
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd();
+
+                    b.Property<string>("author");
 
                     b.Property<int>("authorId");
 

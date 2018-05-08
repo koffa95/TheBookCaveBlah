@@ -4,6 +4,7 @@ namespace TheBookCave.Models.ViewModels
     {
         public int bookId { get; set; }
         public string title { get; set; }
+        public string author { get; set; }
         public int authorId { get; set; }
         public string genre { get; set; }
         public int releaseYear { get; set; }

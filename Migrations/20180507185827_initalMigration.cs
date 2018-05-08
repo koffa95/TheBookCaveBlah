@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace TheBookCave.Migrations
 {
-    public partial class initialMigration : Migration
+    public partial class initalMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -30,6 +30,7 @@ namespace TheBookCave.Migrations
                 {
                     id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    author = table.Column<string>(nullable: true),
                     authorId = table.Column<int>(nullable: false),
                     genre = table.Column<string>(nullable: true),
                     language = table.Column<string>(nullable: true),

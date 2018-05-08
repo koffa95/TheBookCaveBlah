@@ -14,22 +14,23 @@ namespace TheBookCave.Repositories
         }
         public List<BookListViewModel> GetAllBooks()
         {
-            var books = (from a in _db.Books
-                          select new BookListViewModel
-                          {
-                              bookId = a.id,
-                              title = a.title,
-                              authorId = a.authorId,
-                              genre = a.genre,
-                              releaseYear = a.releaseYear,
-                              publisher = a.publisher,
-                              translator = a.translator,
-                              originalLanguage = a.originalLanguage,
-                              language = a.language,
-                              pages = a.pages,
-                              price = a.price
-
-                          }).ToList();
+            var books = (from b in _db.Books
+                         join a in _db.Authors on b.authorId equals a.id
+                         select new BookListViewModel
+                         {
+                              bookId = b.id,
+                              title = b.title,
+                              author = a.name,
+                              authorId = a.id,
+                              genre = b.genre,
+                              releaseYear = b.releaseYear,
+                              publisher = b.publisher,
+                              translator = b.translator,
+                              originalLanguage = b.originalLanguage,
+                              language = b.language,
+                              pages = b.pages,
+                              price = b.price
+                         }).ToList();
 
             return books;
         }

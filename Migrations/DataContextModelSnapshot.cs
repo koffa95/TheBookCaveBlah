@@ -41,6 +41,8 @@ namespace TheBookCave.Migrations
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("author");
+
                     b.Property<int>("authorId");
 
                     b.Property<string>("genre");

@@ -17,7 +17,7 @@ namespace TheBookCave
         public static void Main(string[] args)
         {
             var host = BuildWebHost(args);
-            //SeedData();
+            SeedData();
             host.Run();
         }
 
@@ -42,6 +42,16 @@ namespace TheBookCave
                 };
 
                 db.AddRange(initialAuthors);
+                db.SaveChanges();
+            }
+            if(!db.Books.Any())
+            {
+                var initialBooks = new List<Book>
+                {
+                    new Book { title = "Salka Valka", authorId = 0, genre = "fiction", releaseYear = 1931 , publisher = "Vaka Helgfell", translator = "none", originalLanguage = "Icelandic", language = "Icelandic", pages = 451, price = 2699 }
+                };
+
+                db.AddRange(initialBooks);
                 db.SaveChanges();
             }
         }
