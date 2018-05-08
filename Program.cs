@@ -48,6 +48,7 @@ namespace TheBookCave
             {
                 var initialBooks = new List<Book>
                 {
+                    new Book { title = "Salka Valka", authorId = 0, genre = "fiction", releaseYear = 1931 , publisher = "Vaka Helgfell", translator = "none", originalLanguage = "Icelandic", language = "Icelandic", pages = 451, price = 2699 },
                     new Book { title = "Salka Valka", authorId = 0, genre = "fiction", releaseYear = 1931 , publisher = "Vaka Helgfell", translator = "none", originalLanguage = "Icelandic", language = "Icelandic", pages = 451, price = 2699 }
                 };
 
