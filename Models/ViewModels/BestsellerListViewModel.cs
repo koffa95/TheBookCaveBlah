@@ -1,6 +1,6 @@
 namespace TheBookCave.Models.ViewModels
 {
-    public class MetsolulistinnViewModel
+    public class BestsellerListViewModel
     {
         public int bookId {get; set;}
         public string title {get; set; }
