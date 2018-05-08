@@ -48,8 +48,8 @@ namespace TheBookCave
             {
                 var initialBooks = new List<Book>
                 {
-                    new Book { title = "Salka Valka", authorId = 0, genre = "fiction", releaseYear = 1931 , publisher = "Vaka Helgfell", translator = "none", originalLanguage = "Icelandic", language = "Icelandic", pages = 451, price = 2699 },
-                    new Book { title = "Salka Valka", authorId = 0, genre = "fiction", releaseYear = 1931 , publisher = "Vaka Helgfell", translator = "none", originalLanguage = "Icelandic", language = "Icelandic", pages = 451, price = 2699 }
+                    new Book { title = "Salka Valka", authorId = 1, genre = "fiction", releaseYear = 1931 , publisher = "Vaka Helgfell", translator = "none", originalLanguage = "Icelandic", language = "Icelandic", pages = 451, price = 2699 },
+                    new Book { title = "Macbeth", authorId = 4, genre = "play", releaseYear = 1623 , publisher = "XXX", translator = "none", originalLanguage = "English", language = "english", pages = 73, price = 3000 }
                 };
 
                 db.AddRange(initialBooks);
