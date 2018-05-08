@@ -67,6 +67,22 @@ namespace TheBookCave.Migrations
 
                     b.ToTable("Books");
                 });
+
+            modelBuilder.Entity("TheBookCave.Data.EntityModels.User", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("password");
+
+                    b.Property<bool>("staff");
+
+                    b.Property<string>("username");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Users");
+                });
 #pragma warning restore 612, 618
         }
     }

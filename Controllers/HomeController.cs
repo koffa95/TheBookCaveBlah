@@ -13,14 +13,16 @@ namespace TheBookCave.Controllers
     {
         private AuthorService _authorService;
         private BookService _bookService;
+        private UserService _userService;
         public HomeController()
         {
             _authorService = new AuthorService();
             _bookService = new BookService();
+            _userService = new UserService();
         }
         public IActionResult Index()
         {
-            var authors = _authorService.GetAllAuthors();
+            var authors = _userService.GetAllUsers();
             return View(authors);
         }
         public IActionResult Books()

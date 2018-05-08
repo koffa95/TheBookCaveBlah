@@ -17,7 +17,7 @@ namespace TheBookCave
         public static void Main(string[] args)
         {
             var host = BuildWebHost(args);
-            SeedData();
+            //SeedData();
             host.Run();
         }
 
@@ -53,6 +53,16 @@ namespace TheBookCave
                 };
 
                 db.AddRange(initialBooks);
+                db.SaveChanges();
+            }
+            if(!db.Users.Any())
+            {
+                var initialUser = new List<User>
+                {
+                    new User { username = "Group2", password = "admin", staff = true },
+                };
+
+                db.AddRange(initialUser);
                 db.SaveChanges();
             }
         }

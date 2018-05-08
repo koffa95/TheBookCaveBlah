@@ -46,6 +46,21 @@ namespace TheBookCave.Migrations
                 {
                     table.PrimaryKey("PK_Books", x => x.id);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    password = table.Column<string>(nullable: true),
+                    staff = table.Column<bool>(nullable: false),
+                    username = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.id);
+                });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -55,6 +70,9 @@ namespace TheBookCave.Migrations
 
             migrationBuilder.DropTable(
                 name: "Books");
+
+            migrationBuilder.DropTable(
+                name: "Users");
         }
     }
 }

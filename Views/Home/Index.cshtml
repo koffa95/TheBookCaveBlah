@@ -1,8 +1,8 @@
-﻿@model List<TheBookCave.Models.ViewModels.AuthorListViewModel>
+﻿@model List<TheBookCave.Models.ViewModels.UserListViewModel>
 
 <div>
-    @foreach(var author in @Model)
+    @foreach(var user in @Model)
     {
-        <p>@author.name @author.authorId</p>
+        <p>@user.username @user.staff</p>
     }
 </div>

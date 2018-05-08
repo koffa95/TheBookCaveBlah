@@ -11,7 +11,7 @@ using TheBookCave.Data;
 namespace TheBookCave.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20180508122613_initialMigration")]
+    [Migration("20180508125330_initialMigration")]
     partial class initialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -67,6 +67,22 @@ namespace TheBookCave.Migrations
                     b.HasKey("id");
 
                     b.ToTable("Books");
+                });
+
+            modelBuilder.Entity("TheBookCave.Data.EntityModels.User", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("password");
+
+                    b.Property<bool>("staff");
+
+                    b.Property<string>("username");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }
