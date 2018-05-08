@@ -30,9 +30,10 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">About Us</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">Contact Us</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Information</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">My Cave</a></li>
                 </ul>
             </div>
         </div>
@@ -41,6 +42,7 @@
         @RenderBody()
         <hr />
         <footer>
+            <div id="map">Map</div>
             <p>&copy; 2018 - The_Book_Cave</p>
         </footer>
     </div>

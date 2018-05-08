@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.EntityFrameworkCore.Storage.Internal;
+using Microsoft.EntityFrameworkCore.ValueGeneration;
 using System;
 using TheBookCave.Data;
 
@@ -73,6 +74,9 @@ namespace TheBookCave.Migrations
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired();
+
                     b.Property<string>("password");
 
                     b.Property<bool>("staff");
@@ -82,6 +86,25 @@ namespace TheBookCave.Migrations
                     b.HasKey("id");
 
                     b.ToTable("Users");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("User");
+                });
+
+            modelBuilder.Entity("TheBookCave.Data.EntityModels.Customer", b =>
+                {
+                    b.HasBaseType("TheBookCave.Data.EntityModels.User");
+
+                    b.Property<string>("name");
+
+                    b.Property<string>("phoneNumber");
+
+                    b.Property<string>("socialSecurityNumber");
+
+                    b.Property<int>("userId");
+
+                    b.ToTable("Customer");
+
+                    b.HasDiscriminator().HasValue("Customer");
                 });
 #pragma warning restore 612, 618
         }
