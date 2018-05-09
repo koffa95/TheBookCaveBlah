@@ -20,7 +20,11 @@ namespace TheBookCave.Repositories
                               authorId = a.id,
                               name = a.name,
                               age = a.age,
-                              alive = a.alive
+                              alive = a.alive,
+                              countryOfBirth = a.countryOfBirth,
+                              yearOfBirth = a.yearOfBirth,
+                              image = a.image,
+                              shortDescription = a.shortDescription
                           }).ToList();
 
             return authors;
