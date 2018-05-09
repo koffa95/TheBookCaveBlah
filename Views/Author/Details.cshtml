@@ -1,0 +1,17 @@
+@model List<TheBookCave.Models.ViewModels.AuthorListViewModel>
+@{
+    ViewBag.class = "Author";
+}
+<div>
+    @foreach(var author in @Model)
+    {
+        <h2>@author.name</h2>
+        <div id="image">
+            <img src="@author.image" alt="Author">
+        </div>
+        <div id="aboutAuthor">
+            <h4>About author: </h4>
+            <p>Age: @author.age</p>
+        </div>
+    }
+</div>
