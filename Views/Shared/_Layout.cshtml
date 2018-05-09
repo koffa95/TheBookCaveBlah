@@ -42,26 +42,41 @@
         @RenderBody()
         <hr />
         <footer>
-            <div id="map">Map</div>
+            <hr>
+            <div id="map">
+                <div id="mapL"><img src="~/images/Lagmuli.PNG" alt="Map to Lagmuli" class="img-map" /></div>
+                <div id="mapB"><img src="~/images/Bankastraeti.PNG" alt="Map to Bankastraeti" class="img-map" /></div>
+                <div id="mapK"><img src="~/images/kringlan.PNG" alt="Map to Kringlan" class="img-map" /></div>
+                <div id="mapS"><img src="~/images/Smaralind.PNG" alt="Map to Smaralind" class="img-map" /></div>
+            </div>
             <div id="location">
-                <h3>Locations: </h3>
-                <button id="location1" class="btn">Lagmuli 9, 105 Rvk.</button><br>
+                <h4>Locations:</h4>
+                <button id="location1" class="btn active">Lagmuli 9, 105 Rvk.</button><br>
                 <button id="location2" class="btn">Bankastraeti 0, 101 Rvk.</button><br>
                 <button id="location3" class="btn">Kringlan</button><br>
                 <button id="location4" class="btn">Smaralind</button><br>
             </div>
             <div id="openingHours">
-                <ul class="hours">
-                    <h3>Opening Hours: </h3>
-                    <li></li>
+                <ul class="hours active">
+                    <h4>Opening Hours: </h4>
+                    <li>Weekdays: 9-18</li>
+                    <li>Saturday: 11-18</li>
+                    <li>Sunday: 12-16</li>
+                </ul>
+                <ul class="hours" id="banka">
+                    <h4>Opening Hours: </h4>
+                    <li>Weekdays: 9-18</li>
+                    <li>Saturday: 11-18</li>
+                    <li>Sunday: 12-16</li>
                 </ul>
             </div>
             <div id="questions">
                 <ul class="links">
-                    <h3>Most visited</h3>
+                    <h4>Most visited</h4>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About Us</a></li><br>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a></li><br>
                     <li><a asp-area="" asp-controller="Home" asp-action="Info">Information</a></li><br>
+                    <li><a asp-area="" asp-controller="Home" asp-action="MyCave">My Cave</a></li><br>
                     <li><a asp-area="" asp-controller="Home" asp-action="MyCave">My Cave</a></li><br>
                 </ul>
             </div>

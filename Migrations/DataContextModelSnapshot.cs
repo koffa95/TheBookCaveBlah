@@ -30,7 +30,15 @@ namespace TheBookCave.Migrations
 
                     b.Property<bool>("alive");
 
+                    b.Property<string>("countryOfBirth");
+
+                    b.Property<string>("image");
+
                     b.Property<string>("name");
+
+                    b.Property<string>("shortDescription");
+
+                    b.Property<int>("yearOfBirth");
 
                     b.HasKey("id");
 

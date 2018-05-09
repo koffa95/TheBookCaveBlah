@@ -39,28 +39,43 @@
     height: 300px;
     float: left;
     border: solid;
+    overflow: hidden;
+    min-height: 100%; 
+    width: auto;
 }
 
 .btn {
     border: none;
     background-color: inherit;
-    padding: 14px 28px;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
+}
+footer {
+    margin-right: auto;
+    margin-left: auto;
 }
 #location, #questions, #openingHours {
     float: left;
     border: solid;
     height: 300px;
+    width: 175px;
+}
+div > h4 {
+    text-align: center;
 }
 li{
    list-style-type: none;
    text-align: right; 
    margin-right: 0.5cm;
-   font-size: medium;
+   font-size: 14px;
+   padding-right: 10px;
 }
 .links{
     margin-top: 10%;
     float: left;
     width: 5cm;
+}
+
+img {
+    height: 300px;
 }
