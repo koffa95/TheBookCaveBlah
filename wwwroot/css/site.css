@@ -57,10 +57,11 @@ li{
    list-style-type: none;
    text-align: right; 
    margin-right: 0.5cm;
+   font-size: medium;
 }
 .links{
-    margin-top: 45%;
-    margin-bottom: 55%;
+    margin-top: 10%;
+    
     float: left;
     width: 5cm;
 }
