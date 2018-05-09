@@ -29,7 +29,7 @@ namespace TheBookCave.Controllers
                     return View(clickedAuthor.ToList());
                 }
             }
-            return View("Not Found");
+            return View("NotFound");
         }
     }
 }
