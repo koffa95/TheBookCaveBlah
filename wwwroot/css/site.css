@@ -33,6 +33,10 @@
         display: none;
     }
 }
+ul {
+    margin: 0;
+    padding: 0;
+}
 
 #map{
     width: 450px;
@@ -58,22 +62,26 @@ footer {
     float: left;
     border: solid;
     height: 300px;
+    text-align: center;
+}
+#location{
     width: 175px;
+}
+#openingHours{
+    width: 210px;
+}
+#questions {
+    width: 140px;
 }
 div > h4 {
     text-align: center;
+    word-wrap: break-word;
+    flex-wrap: wrap; 
 }
 li{
-   list-style-type: none;
-   text-align: right; 
-   margin-right: 0.5cm;
-   font-size: 14px;
-   padding-right: 10px;
-}
-.links{
-    margin-top: 10%;
-    float: left;
-    width: 5cm;
+    list-style-type: none;
+    text-align: center; 
+    font-size: 14px;
 }
 
 img {

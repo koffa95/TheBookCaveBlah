@@ -37,7 +37,7 @@ namespace TheBookCave
                     new Author { name = "Halldor Laxness", age = 96, alive = false},
                     new Author { name = "Arnaldur Indridason", age = 57, alive = true},
                     new Author { name = "Audur Ava Olafsdottir", age = 60, alive = true},
-                    new Author { name = "William Shakespear", age = 52, alive = false},
+                    new Author { name = "William Shakespeare", age = 52, alive = false},
                     new Author { name = "J.R.R. Tolkien", age = 81, alive = false}
                 };
 
