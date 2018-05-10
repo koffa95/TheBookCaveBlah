@@ -133,16 +133,10 @@ $(".btn, .btn-default, .btn-lg, .cart").click(function() {
         dataType: 'json',
         data: { bookId },
         success: function (data) {
-            alert("success");
+            alert("Item has been added to Cart");
         },
         error: function () {
             alert('error');
         }
     });
-
-    //$.ajax("/MyCave/AddToCart"(id));
-    
-    //$.ajax("../MyCave/AddToCart", function(data) {
-        //alert(data);
-    //});
 });
