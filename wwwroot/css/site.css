@@ -1,4 +1,4 @@
-﻿.body {
+﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
     background-color: #CE6A86;
@@ -7,7 +7,7 @@
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
-    margin-top: 1.5cm;
+    margin-top: 1.3cm;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -53,9 +53,14 @@ ul {
 
 .btn {
     border: none;
-    background-color: #FF8D61;
     font-size: 14px;
     cursor: pointer;
+    background-color: #D7D7D7;
+    color: #FF8D61;
+}
+.btn.active{
+    background-color: #FF8D61;
+    color: #D7D7D7;
 }
 .footer {
     margin-right: auto;
@@ -63,14 +68,18 @@ ul {
     color: #FF8D61;
     background-color: #D7D7D7;
 }
+footer{
+    background-color: #D7D7D7;
+}
 #location, #questions, #openingHours {
     float: left;
     border: solid;
     height: 300px;
     text-align: center;
+    background-color: #D7D7D7;
 }
 #location {
-    width: 175px;
+    width: 181px;
 }
 #openingHours{
     width: 210px;
@@ -87,6 +96,9 @@ li {
     list-style-type: none;
     text-align: center; 
     font-size: 14px;
+}
+.links a {
+    color: #FF8D61;
 }
 
 img {
