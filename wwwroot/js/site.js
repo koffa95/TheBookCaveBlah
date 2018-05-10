@@ -7,7 +7,27 @@ $(document).ready(function() {
     $("#mapB").hide();
     $("#mapK").hide(); 
     $("#mapS").hide();
+
+    $(".icon-input-btn").each(function(){
+
+        var btnFont = $(this).find(".btn").css("font-size");
+    
+        var btnColor = $(this).find(".btn").css("color");
+    
+        $(this).find(".glyphicon").css("font-size", btnFont);
+    
+        $(this).find(".glyphicon").css("color", btnColor);
+    
+        if($(this).find(".btn-xs").length){
+    
+            $(this).find(".glyphicon").css("top", "24%");
+    
+        }
+    
+    }); 
 });
+
+
 
 $( "#location1" ).click(function() {
     if($("#location2").hasClass("active") == true)
@@ -104,3 +124,25 @@ $( "#location4" ).click(function() {
     }
 });
 
+$(".btn, .btn-default, .btn-lg, .cart").click(function() {
+    
+    var bookId = parseInt(this.value);
+    $.ajax({
+        url: '/MyCave/AddToCart',
+        type: 'POST',    
+        dataType: 'json',
+        data: { bookId },
+        success: function (data) {
+            alert("success");
+        },
+        error: function () {
+            alert('error');
+        }
+    });
+
+    //$.ajax("/MyCave/AddToCart"(id));
+    
+    //$.ajax("../MyCave/AddToCart", function(data) {
+        //alert(data);
+    //});
+});

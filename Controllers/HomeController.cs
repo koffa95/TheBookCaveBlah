@@ -19,5 +19,17 @@ namespace TheBookCave.Controllers
         {
             return View();
         }
+        public IActionResult About()
+        {
+            return View();
+        }
+        public IActionResult Contact()
+        {
+            return View();
+        }
+        public IActionResult Info()
+        {
+            return View();
+        }
     }
 }

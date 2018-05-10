@@ -56,6 +56,8 @@ namespace TheBookCave.Migrations
 
                     b.Property<string>("genre");
 
+                    b.Property<string>("image");
+
                     b.Property<string>("language");
 
                     b.Property<string>("originalLanguage");
@@ -68,6 +70,8 @@ namespace TheBookCave.Migrations
 
                     b.Property<int>("releaseYear");
 
+                    b.Property<string>("shortDescription");
+
                     b.Property<string>("title");
 
                     b.Property<string>("translator");
@@ -75,6 +79,20 @@ namespace TheBookCave.Migrations
                     b.HasKey("id");
 
                     b.ToTable("Books");
+                });
+
+            modelBuilder.Entity("TheBookCave.Data.EntityModels.Cart", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("bookId");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("bookId");
+
+                    b.ToTable("Cart");
                 });
 
             modelBuilder.Entity("TheBookCave.Data.EntityModels.User", b =>
@@ -113,6 +131,14 @@ namespace TheBookCave.Migrations
                     b.ToTable("Customer");
 
                     b.HasDiscriminator().HasValue("Customer");
+                });
+
+            modelBuilder.Entity("TheBookCave.Data.EntityModels.Cart", b =>
+                {
+                    b.HasOne("TheBookCave.Data.EntityModels.Book", "book")
+                        .WithMany()
+                        .HasForeignKey("bookId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

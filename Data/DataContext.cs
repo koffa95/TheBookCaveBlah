@@ -9,6 +9,7 @@ namespace TheBookCave.Data
         public DbSet<Author> Authors { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Customer> Customer { get; set; }
+        public DbSet<Cart> Cart { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

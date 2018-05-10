@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/The-Book-Cave.csproj"
+                "${workspaceFolder}/TheBookCave.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
