@@ -133,16 +133,26 @@ $(".btn, .btn-default, .btn-lg, .cart").click(function() {
         dataType: 'json',
         data: { bookId },
         success: function (data) {
-            alert("success");
+            alert("Item has been added to Cart");
         },
         error: function () {
             alert('error');
         }
     });
-
-    //$.ajax("/MyCave/AddToCart"(id));
+});
+$(".btn, .btn-default, .btn-lg, .rmv-cart").click(function() {
     
-    //$.ajax("../MyCave/AddToCart", function(data) {
-        //alert(data);
-    //});
+    var bookId = parseInt(this.value);
+    $.ajax({
+        url: '/MyCave/RemoveFromCart',
+        type: 'POST',    
+        dataType: 'json',
+        data: { bookId },
+        success: function (data) {
+            alert("Item has been removed from Cart");
+        },
+        error: function () {
+            alert('error');
+        }
+    });
 });

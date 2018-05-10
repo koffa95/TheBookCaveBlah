@@ -14,28 +14,49 @@ namespace TheBookCave.Controllers
 {
     public class MyCaveController : Controller
     {
-        private CartService _cartService;
+        //private CartService _cartService;
         public MyCaveController()
         {
-            _cartService = new CartService();
+            //_cartService = new CartService();
         }
        [HttpPost]
         public ActionResult AddToCart(int bookId)
         {
-            Console.Write(bookId);
+            var newCart = new Cart() { bookId = bookId };
+           
+            var db = new DataContext();
+
+            db.Add(newCart);
+            db.SaveChanges();
+            return this.Json(new { success = true });
+        }
+        public ActionResult RemoveFromCart(int bookId)
+        {
 
             var newCart = new Cart() { bookId = bookId };
            
             var db = new DataContext();
 
-            db.AddRange(newCart);
+            db.Remove(newCart);
             db.SaveChanges();
             return this.Json(new { success = true });
+            
         }
-                public IActionResult SignIn()
+        public ActionResult EmptyCart()
+        {
+           
+            var db = new DataContext();
+
+            db.Cart.RemoveRange();
+            db.SaveChanges();
+            return this.Json(new { success = true });
+            
+        }
+        public IActionResult SignIn()
         {
             return View();
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult signUp(CustomerViewModel _customer)
