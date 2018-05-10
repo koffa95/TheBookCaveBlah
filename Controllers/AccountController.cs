@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using TheBookCave.Models.ViewModels;
 using System.Threading.Tasks;
 using TheBookCave.Data;
+using System.Security.Claims;
 
 namespace TheBookCave.Controllers
 {
@@ -28,6 +29,15 @@ namespace TheBookCave.Controllers
         public async Task<IActionResult> Register(RegisterViewModel _register)
         {
             if(!ModelState.IsValid) {return View();}
+            var user = new ApplicationUser { UserName = _register.username};
+            var result = await _userManager.CreateAsync(user, _register.password);
+            if(!result.Succeeded)
+            {
+                await _userManager.AddClaimAsync(user, new Claim("Name", "_register.name"));
+                await _signInManager.SignInAsync(user, false);
+
+                return RedirectToAction("Index", "Home");
+            }
             return View();
         }
     }
