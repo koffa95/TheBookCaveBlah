@@ -59,6 +59,7 @@ ul {
 footer {
     margin-right: auto;
     margin-left: auto;
+    color: #FF8D61;
 }
 #location, #questions, #openingHours {
     float: left;
