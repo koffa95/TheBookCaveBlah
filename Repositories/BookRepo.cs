@@ -16,6 +16,7 @@ namespace TheBookCave.Repositories
         {
             var books = (from b in _db.Books
                          join a in _db.Authors on b.authorId equals a.id
+                         orderby b.title ascending
                          select new BookListViewModel
                          {
                               bookId = b.id,
