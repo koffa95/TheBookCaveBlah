@@ -1,8 +1,9 @@
+using TheBookCave.Data;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using authentication_repo.Models;
+using TheBookCave.Models;
 
-namespace authentication_repo.Data
+namespace TheBookCave.Data
 {
     public class AuthenticationDbContext : IdentityDbContext<ApplicationUser>
     {

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using TheBookCave.Data;
 using TheBookCave.Data.EntityModels;
 using TheBookCave.Models;
+using TheBookCave.Models.ViewModels;
 using TheBookCave.Services;
 
 namespace TheBookCave.Controllers
@@ -17,10 +18,6 @@ namespace TheBookCave.Controllers
         public MyCaveController()
         {
             _cartService = new CartService();
-        }
-        public IActionResult SignIn()
-        {
-            return View();
         }
        [HttpPost]
         public ActionResult AddToCart(int bookId)
@@ -34,8 +31,17 @@ namespace TheBookCave.Controllers
             db.AddRange(newCart);
             db.SaveChanges();
             return this.Json(new { success = true });
-            //return View("../Home/Index");
-            
+        }
+                public IActionResult SignIn()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult signUp(CustomerViewModel _customer)
+        {
+            if(!ModelState.IsValid) {return View();}
+            return View();
         }
     }
 }

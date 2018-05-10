@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 
-namespace authentication_repo.Data
+namespace TheBookCave.Data
 {
     public class ApplicationUser : IdentityUser
     {
