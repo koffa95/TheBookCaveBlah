@@ -1,12 +1,18 @@
 @model List<TheBookCave.Models.ViewModels.BookListViewModel>
 
+@{
+    ViewBag.Title = "All Books!";
+}
+
 <div>
     @foreach(var book in @Model)
     {
-        <div>
+        <div class="inline">
+            <box id="book-img">photo of book</box>
             <p>@book.title</p>
-            <p>@book.pages</p>
-            <p>@book.price</p>
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+            <p><a asp-area="" asp-controller="Author" asp-action="Index" asp-route-id="@book.authorId" >@book.author</a></p>
+            <p>Price: @book.price ISK</p>
         </div>
     }
 </div>

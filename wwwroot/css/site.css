@@ -146,3 +146,23 @@ form {
     margin-right: auto;
     text-align: center;
 }
+
+.inline{
+    display: inline-block;
+    border: solid;
+    height: 5cm;
+    width: 7cm;
+    padding-top: 0.3cm;
+}
+.glyphicon.glyphicon-shopping-cart{
+    float: right;
+    padding-right: 0.6cm;
+}
+#book-img{
+    margin-left: 0.3cm;
+    margin-right: 0.3cm;
+    height: 2.5cm;
+    width: 1.5cm;
+    border: solid;
+    float: left;
+}
