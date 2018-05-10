@@ -52,13 +52,15 @@ ul {
 
 .btn {
     border: none;
-    background-color: inherit;
+    background-color: #FF8D61;
     font-size: 14px;
     cursor: pointer;
 }
-footer {
+.footer {
     margin-right: auto;
     margin-left: auto;
+    color: #D7D7D7;
+    background-color: darkgreen !important;
 }
 #location, #questions, #openingHours {
     float: left;
