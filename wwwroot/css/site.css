@@ -1,4 +1,4 @@
-﻿body {
+﻿.body {
     padding-top: 50px;
     padding-bottom: 20px;
     background-color: #CE6A86;
@@ -7,6 +7,7 @@
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
+    margin-top: 1.5cm;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -59,12 +60,8 @@ ul {
 .footer {
     margin-right: auto;
     margin-left: auto;
-<<<<<<< HEAD
     color: #FF8D61;
-=======
-    color: #D7D7D7;
-    background-color: darkgreen !important;
->>>>>>> aa6811c909eee845a5cc5a41ef3e976c24e9967c
+    background-color: #D7D7D7;
 }
 #location, #questions, #openingHours {
     float: left;
