@@ -36,6 +36,27 @@
         display: none;
     }
 }
+.nav.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: none;
+    }
+}
+.nav.navbar-nav > li > a{
+    color: #FF8D61;
+}
+.navbar{
+    background-color: #D7D7D7;
+}
+.navbar > li > a{
+    font-size: medium;
+    color: #FF8D61;
+}
+
 ul {
     margin: 0;
     padding: 0;

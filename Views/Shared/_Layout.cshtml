@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - The_Book_Cave</title>
+    <title>@ViewData["Title"] - The Book Cave</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -26,7 +26,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">The_Book_Cave</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">The Book Cave</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -41,6 +41,18 @@
         </div>
     </nav>
     <div class="container body-content">
+        <header>
+            <div class="navbar">
+                <ul class="nav navbar-nav navbar">
+                    <li><a asp-area="" asp-controller="Book" asp-action="BestSellers">Best Sellers</a></li>
+                    <li><a asp-area="" asp-controller="Book" asp-action="Top10"> Top 10 </a></li>
+                    <li><a asp-area="" asp-controller="Book" asp-action="AllBooks">All Books</a></li>
+                    <li><a asp-area="" asp-controller="Book" asp-action="Ebooks">Ebooks</a></li>
+                    <li><a asp-area="" asp-controller="Book" asp-action="AudioBooks">AudioBooks</a></li>
+                    <li><a asp-area="" asp-controller="Book" asp-action="Deals">Deals</a></li>
+                </ul>
+            </div>
+        </header>
         @RenderBody()
         <hr />
         <footer class="footer">
