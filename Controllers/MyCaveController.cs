@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using TheBookCave.Models;
+using TheBookCave.Models.ViewModels;
 using TheBookCave.Services;
 
 namespace TheBookCave.Controllers
@@ -26,8 +27,10 @@ namespace TheBookCave.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult signUp(CustomerService _customerService)
+        [ValidateAntiForgeryToken]
+        public IActionResult signUp(CustomerViewModel _customer)
         {
+            if(!ModelState.IsValid) {return View();}
             return View();
         }
     }
