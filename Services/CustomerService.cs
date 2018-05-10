@@ -11,7 +11,7 @@ namespace TheBookCave.Services
         {
             _customerRepo = new CustomerRepo();
         }
-        public CustomerViewModel GetCustomer()
+        public RegisterViewModel GetCustomer()
         {
             var customer = _customerRepo.GetCustomer();
             return customer; 

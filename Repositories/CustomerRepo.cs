@@ -12,11 +12,11 @@ namespace TheBookCave.Repositories
         {
             _db = new DataContext();
         }
-        public CustomerViewModel GetCustomer()
+        public RegisterViewModel GetCustomer()
         {
             var customer = (from c in _db.Customer
                             join u in _db.Users on c.userId equals u.id
-                            select new CustomerViewModel
+                            select new RegisterViewModel
                             {
                                 username = u.username,
                                 staff = u.staff,

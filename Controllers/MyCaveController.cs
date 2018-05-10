@@ -59,7 +59,7 @@ namespace TheBookCave.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult signUp(CustomerViewModel _customer)
+        public IActionResult signUp(RegisterViewModel _customer)
         {
             if(!ModelState.IsValid) {return View();}
             return View();
