@@ -85,7 +85,7 @@ $( "#location4" ).click(function() {
     {
         $("#location2").removeClass("active");
         $("#location4").addClass("active");
-        $( "#mapB, #maps" ).toggle();
+        $( "#mapB, #mapS" ).toggle();
         $( "#smaralind, #bankastraeti" ).toggle();
     }
     else if($("#location3").hasClass("active") == true)

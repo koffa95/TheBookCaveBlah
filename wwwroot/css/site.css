@@ -37,7 +37,7 @@ ul {
     margin: 0;
     padding: 0;
 }
-
+  
 #map{
     width: 450px;
     height: 300px;
@@ -64,7 +64,7 @@ footer {
     height: 300px;
     text-align: center;
 }
-#location{
+#location {
     width: 175px;
 }
 #openingHours{
@@ -78,7 +78,7 @@ div > h4 {
     word-wrap: break-word;
     flex-wrap: wrap; 
 }
-li{
+li {
     list-style-type: none;
     text-align: center; 
     font-size: 14px;
@@ -86,4 +86,18 @@ li{
 
 img {
     height: 300px;
+}
+
+div.form {
+    display: block;
+    text-align: center;
+}
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-top: 3cm;
+    margin-bottom: 3cm;
+    font-size: large;
 }
