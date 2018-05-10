@@ -140,3 +140,19 @@ $(".btn, .btn-default, .btn-lg, .cart").click(function() {
         }
     });
 });
+$(".btn, .btn-default, .btn-lg, .rmv-cart").click(function() {
+    
+    var bookId = parseInt(this.value);
+    $.ajax({
+        url: '/MyCave/RemoveFromCart',
+        type: 'POST',    
+        dataType: 'json',
+        data: { bookId },
+        success: function (data) {
+            alert("Item has been removed from Cart");
+        },
+        error: function () {
+            alert('error');
+        }
+    });
+});
