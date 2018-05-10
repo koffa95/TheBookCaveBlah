@@ -11,11 +11,22 @@ namespace TheBookCave.Controllers
 {
     public class MyCaveController : Controller
     {
+        private CustomerService _customerService;
         public MyCaveController()
         {
-
+            _customerService = new CustomerService();
         }
         public IActionResult signIn()
+        {
+            return View();
+        }
+        [HttpGet]
+        public IActionResult signUp()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult signUp(CustomerService _customerService)
         {
             return View();
         }
