@@ -103,3 +103,4 @@ $( "#location4" ).click(function() {
         $( "#smaralind, #lagmuli" ).toggle();
     }
 });
+

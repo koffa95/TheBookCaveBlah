@@ -101,3 +101,10 @@ form {
     margin-bottom: 3cm;
     font-size: large;
 }
+
+.signIn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
