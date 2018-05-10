@@ -14,5 +14,7 @@ namespace TheBookCave.Data.EntityModels
         public string language {get; set;}
         public int pages {get; set;}
         public int price {get; set;}
+        public string image {get; set;}
+        public string shortDescription { get; set; }
     }
 }

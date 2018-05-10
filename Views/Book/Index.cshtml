@@ -8,11 +8,16 @@
     @foreach(var book in @Model)
     {
         <div class="inline">
-            <box id="book-img">photo of book</box>
-            <p>@book.title</p>
+            <div id="book-img">
+                <img src="@book.image" alt="Book">
+            </div>
+            <p><a asp-area="" asp-controller="Book" asp-action="Index" asp-route-id="@book.bookId">@book.title</a></p>
             <span class="glyphicon glyphicon-shopping-cart"></span>
-            <p><a asp-area="" asp-controller="Author" asp-action="Index" asp-route-id="@book.authorId" >@book.author</a></p>
+            <p><a asp-area="" asp-controller="Author" asp-action="Index" asp-route-id="@book.authorId">@book.author</a></p>
             <p>Price: @book.price ISK</p>
+            <div class="shortDescription">
+                <p>@book.shortDescription</p>
+            </div>
         </div>
     }
 </div>

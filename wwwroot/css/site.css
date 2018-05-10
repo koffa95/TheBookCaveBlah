@@ -122,7 +122,7 @@ li {
     color: #FF8D61;
 }
 
-img {
+#map > div> img {
     height: 300px;
 }
 
@@ -151,8 +151,19 @@ form {
     display: inline-block;
     border: solid;
     height: 5cm;
-    width: 7cm;
+    width: 7.4cm;
     padding-top: 0.3cm;
+    background-color: #D7D7D7;
+    overflow: hidden;
+}
+.inline > p, a{
+    color: #FF8D61;
+}
+#shortDescription{
+    margin-left: 0.3cm;
+    text-align: center;
+    word-wrap: break-word;
+    flex-wrap: wrap; 
 }
 .glyphicon.glyphicon-shopping-cart{
     float: right;
@@ -161,8 +172,16 @@ form {
 #book-img{
     margin-left: 0.3cm;
     margin-right: 0.3cm;
-    height: 2.5cm;
-    width: 1.5cm;
-    border: solid;
+    width: 1.7cm;
     float: left;
+    overflow: hidden;
+    width: auto;
+}
+#book-img > img{
+    height: 2.5cm;
+}
+.inline #book-img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }

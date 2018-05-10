@@ -29,7 +29,9 @@ namespace TheBookCave.Repositories
                               originalLanguage = b.originalLanguage,
                               language = b.language,
                               pages = b.pages,
-                              price = b.price
+                              price = b.price,
+                              image = b.image,
+                              shortDescription = b.shortDescription
                          }).ToList();
 
             return books;
