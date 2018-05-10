@@ -12,7 +12,9 @@
                 <img src="@book.image" alt="Book">
             </div>
             <p><a asp-area="" asp-controller="Book" asp-action="Index" asp-route-id="@book.bookId">@book.title</a></p>
-            <span class="glyphicon glyphicon-shopping-cart"></span>
+
+            <span class="icon-input-btn"><span class="glyphicon glyphicon-shopping-cart"></span> <input type="submit" class="btn btn-default btn-lg cart" value="@book.bookId" id="cart"></span>
+
             <p><a asp-area="" asp-controller="Author" asp-action="Index" asp-route-id="@book.authorId">@book.author</a></p>
             <p>Price: @book.price ISK</p>
             <div class="shortDescription">

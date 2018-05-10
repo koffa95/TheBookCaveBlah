@@ -16,10 +16,12 @@ namespace TheBookCave.Repositories
         public List<CartViewModel> GetCart()
         {
             var cart = (from c in _db.Cart
+                        join b in _db.Books on c.bookId equals b.id
                         select new CartViewModel
                         {
                             id = c.id,
-                            book = c.book
+                            bookId = c.bookId,
+                            book = b
                         }).ToList();
 
             return cart;

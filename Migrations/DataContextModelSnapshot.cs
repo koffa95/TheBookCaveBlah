@@ -86,11 +86,11 @@ namespace TheBookCave.Migrations
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int?>("bookid");
+                    b.Property<int>("bookId");
 
                     b.HasKey("id");
 
-                    b.HasIndex("bookid");
+                    b.HasIndex("bookId");
 
                     b.ToTable("Cart");
                 });
@@ -137,7 +137,8 @@ namespace TheBookCave.Migrations
                 {
                     b.HasOne("TheBookCave.Data.EntityModels.Book", "book")
                         .WithMany()
-                        .HasForeignKey("bookid");
+                        .HasForeignKey("bookId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }
